@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#cccccc</color>
+    <color name="colorAccent">#1eb7f6</color>
+
+    <color name="toolbarColor">#fff</color>
+
+    <color name="textGrey">#888</color>
+    <color name="textDarkBlue">#3c4468</color>
+    <color name="textBlue">#1eb7f6</color>
+
+    <color name="indicator">#d45257</color>
+
+    <color name="controlNormal">#1eb7f6</color>
+    <color name="controlActivated">#1eb7f6</color>
+    <color name="controlHightlight">#5f82c1</color>
+
+    <color name="windowBackground">#fff</color>
+
+    <color name="white70">#bbffffff</color>
+
+    <color name="black87">#dd000000</color>
+    <color name="black50">#7f000000</color>
+    <color name="black28">#47000000</color>
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+
+    <color name="divider">#999</color>
+
+    <color name="greyLight">#DBDBDB</color>
+    <color name="grey">#d9d9d9</color>
+    <color name="fuzzy">#8aa2d1</color>
+
+    <color name="bubble">#d9d9d9</color>
+
+    <color name="buttonBlue">#1eb7f6</color>
+    <color name="buttonBluePressed">#439ce3</color>
+    <color name="buttonBlueDisabled">#98ccf6</color>
+    <color name="buttonBlueUnselected">#ccc</color>
+</resources>

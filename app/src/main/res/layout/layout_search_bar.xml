@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_middle"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="6dp">
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space"
+        android:layout_marginStart="@dimen/space_small"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:drawableStart="@android:drawable/ic_search_category_default"
+        android:hint="Search Users"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        tools:ignore="Autofill" />
+</androidx.cardview.widget.CardView>
