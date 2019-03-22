@@ -12,7 +12,7 @@
         android:id="@+id/search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/space"
+        android:padding="8dp"
         android:layout_marginStart="@dimen/space_small"
         android:layout_weight="1"
         android:background="#fff"

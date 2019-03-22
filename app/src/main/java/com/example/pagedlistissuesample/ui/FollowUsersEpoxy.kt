@@ -2,6 +2,7 @@ package com.example.pagedlistissuesample.ui
 
 import android.graphics.Color
 import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.ToggleButton
@@ -41,7 +42,7 @@ class FollowUsersEpoxyHolder : EpoxyHolder() {
     var userImage: ImageView? = null
     var displayName: TextView? = null
     var userName: TextView? = null
-    var follow: ToggleButton? = null
+    var follow: Button? = null
 
     override fun bindView(itemView: View) {
         userImage = itemView.findViewById(R.id.userImage)
@@ -72,7 +73,7 @@ abstract class EpoxyFollowUserModel : EpoxyModelWithHolder<FollowUsersEpoxyHolde
         holder.userImage?.loadImage(drawable = R.mipmap.ic_launcher_round, circular = true)
         holder.displayName?.text = displayName
         holder.userName?.text = userName
-        holder.follow?.isChecked = following
+        holder.follow?.tag = following
         holder.follow?.text = if (following) "Unfollow " else "Follow"
         holder.follow?.setBackgroundColor(if (following) Color.GRAY else Color.BLUE)
         holder.follow?.setOnClickListener(followClickListener)

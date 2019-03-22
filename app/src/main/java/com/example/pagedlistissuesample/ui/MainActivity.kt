@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
+import android.widget.Button
 import android.widget.ToggleButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.paging.PagedList
@@ -25,10 +26,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        supportActionBar?.hide()
         pagingEpoxyController = FollowUsersPagingEpoxyController(userOnModelClickListener)
         epoxyRecyclerView.adapter = pagingEpoxyController.adapter
 
         search.hint = "Search people"
+        searchUser("")
         search.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
             }
@@ -76,10 +79,10 @@ class MainActivity : AppCompatActivity() {
             }
 
             private fun onItemClick(clickedView: View, model: EpoxyFollowUserModel_) {
-                if ((clickedView as ToggleButton).isChecked) {
-                    followUser(model.userId())
-                } else {
+                if ((clickedView as Button).tag as Boolean) {
                     unFollowUser(model.userId())
+                } else {
+                    followUser(model.userId())
                 }
             }
         }
